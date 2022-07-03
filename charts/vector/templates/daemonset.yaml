@@ -36,5 +36,6 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
     spec:
+      hostNetwork: true
       {{- include "vector.pod" . | nindent 6 }}
 {{- end }}
